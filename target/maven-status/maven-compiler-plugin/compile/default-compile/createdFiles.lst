@@ -1,0 +1,10 @@
+com\maxfit\view\RutasVista.class
+com\maxfit\controller\AbstractControlador.class
+com\maxfit\controller\LoginController.class
+com\maxfit\service\AutenticacionEstatica.class
+com\maxfit\service\package-info.class
+com\maxfit\controller\PruebaConexionBdController.class
+com\maxfit\controller\InicioController.class
+com\maxfit\controller\EjemploController.class
+com\maxfit\dao\package-info.class
+com\maxfit\model\package-info.class

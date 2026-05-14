@@ -1,0 +1,5 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 2rem; line-height: 1.5; }
+header { margin-bottom: 1.5rem; }
+.ok { color: #0a6; }
+.error { color: #a30; }

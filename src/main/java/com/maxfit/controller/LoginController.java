@@ -1,0 +1,38 @@
+package com.maxfit.controller;
+
+import com.maxfit.service.AutenticacionEstatica;
+import com.maxfit.view.RutasVista;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Optional;
+
+/**
+ * Login: GET muestra el formulario; POST valida credenciales y vuelve a la misma vista con mensaje.
+ */
+public class LoginController extends AbstractControlador {
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        mostrarVista(req, resp, RutasVista.AUTH_LOGIN);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        req.setCharacterEncoding("UTF-8");
+        String correo = req.getParameter("correo");
+        String contrasena = req.getParameter("contrasena");
+
+        Optional<String> nombre = AutenticacionEstatica.validarCredenciales(correo, contrasena);
+        if (nombre.isPresent()) {
+            req.setAttribute("mensajeBienvenida", "Bienvenido " + nombre.get());
+        } else {
+            req.setAttribute("errorLogin", "Correo o contraseña incorrectos.");
+        }
+        mostrarVista(req, resp, RutasVista.AUTH_LOGIN);
+    }
+}

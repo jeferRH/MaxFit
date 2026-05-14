@@ -1,0 +1,6 @@
+# Copia este archivo como db.properties y ajusta valores.
+# No subas db.properties con contraseñas reales a repositorios públicos.
+
+jdbc.url=jdbc:sqlserver://localhost:1433;databaseName=TU_BD;encrypt=true;trustServerCertificate=true
+jdbc.user=sa
+jdbc.password=TU_PASSWORD
