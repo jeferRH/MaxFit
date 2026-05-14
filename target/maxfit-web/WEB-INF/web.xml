@@ -13,31 +13,14 @@
   <!-- Capa controlador (C de MVC): rutas públicas → forwards a WEB-INF/vistas -->
 
   <servlet>
-    <servlet-name>InicioController</servlet-name>
-    <servlet-class>com.maxfit.controller.InicioController</servlet-class>
+    <servlet-name>HomeController</servlet-name>
+    <servlet-class>com.maxfit.controller.HomeController</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>InicioController</servlet-name>
-    <url-pattern>/inicio</url-pattern>
+    <servlet-name>HomeController</servlet-name>
+    <url-pattern>/home</url-pattern>
   </servlet-mapping>
 
-  <servlet>
-    <servlet-name>EjemploController</servlet-name>
-    <servlet-class>com.maxfit.controller.EjemploController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>EjemploController</servlet-name>
-    <url-pattern>/ejemplo</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-    <servlet-name>PruebaConexionBdController</servlet-name>
-    <servlet-class>com.maxfit.controller.PruebaConexionBdController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>PruebaConexionBdController</servlet-name>
-    <url-pattern>/dev/prueba-bd</url-pattern>
-  </servlet-mapping>
 
   <servlet>
     <servlet-name>LoginController</servlet-name>
@@ -46,5 +29,68 @@
   <servlet-mapping>
     <servlet-name>LoginController</servlet-name>
     <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ForgotPasswordController</servlet-name>
+    <servlet-class>com.maxfit.controller.ForgotPasswordController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgotPasswordController</servlet-name>
+    <url-pattern>/forgot-password</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DashboardController</servlet-name>
+    <servlet-class>com.maxfit.controller.DashboardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DashboardController</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ClientsController</servlet-name>
+    <servlet-class>com.maxfit.controller.ClientsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientsController</servlet-name>
+    <url-pattern>/clients</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SchedulesController</servlet-name>
+    <servlet-class>com.maxfit.controller.SchedulesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SchedulesController</servlet-name>
+    <url-pattern>/schedules</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MembershipsController</servlet-name>
+    <servlet-class>com.maxfit.controller.MembershipsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MembershipsController</servlet-name>
+    <url-pattern>/memberships</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EmployeesController</servlet-name>
+    <servlet-class>com.maxfit.controller.EmployeesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeesController</servlet-name>
+    <url-pattern>/employees</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ReportsController</servlet-name>
+    <servlet-class>com.maxfit.controller.ReportsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReportsController</servlet-name>
+    <url-pattern>/reports</url-pattern>
   </servlet-mapping>
 </web-app>

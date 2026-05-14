@@ -1,0 +1,27 @@
+/* Estilos Globales — Fuente Inter y Material Symbols */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+  background-color: #f8f9fa;
+}
+
+.ok {
+  color: #0a6;
+}
+
+.error {
+  color: #a30;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
