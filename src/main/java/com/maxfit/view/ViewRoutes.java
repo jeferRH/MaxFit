@@ -15,6 +15,7 @@ public final class ViewRoutes {
     public static final String AUTH_DASHBOARD = "/WEB-INF/views/dashboard/dashboard.jsp";
     public static final String CLIENTS_INDEX = "/WEB-INF/views/clients/clients.jsp";
     public static final String SCHEDULES_INDEX = "/WEB-INF/views/schedules/schedules.jsp";
+    public static final String SCHEDULES_CALENDAR = "/WEB-INF/views/schedules/calendar.jsp";
     public static final String MEMBERSHIPS_INDEX = "/WEB-INF/views/memberships/memberships.jsp";
     public static final String EMPLOYEES_INDEX = "/WEB-INF/views/employees/employees.jsp";
     public static final String REPORTS_INDEX = "/WEB-INF/views/reports/reports.jsp";

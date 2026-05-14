@@ -66,6 +66,10 @@
     <servlet-name>SchedulesController</servlet-name>
     <url-pattern>/schedules</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SchedulesController</servlet-name>
+    <url-pattern>/calendar</url-pattern>
+  </servlet-mapping>
 
   <servlet>
     <servlet-name>MembershipsController</servlet-name>

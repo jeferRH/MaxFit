@@ -37,7 +37,7 @@
                         <span class="material-symbols-outlined icon-sm" style="font-variation-settings:'FILL' 1;">list</span>
                         Listado
                     </button>
-                    <button class="tab" onclick="window.location.href = '${pageContext.request.contextPath}/schedules?vista=calendario'">
+                    <button class="tab" onclick="window.location.href = '${pageContext.request.contextPath}/calendar'">
                         <span class="material-symbols-outlined icon-sm">calendar_month</span>
                         Calendario Semanal
                     </button>

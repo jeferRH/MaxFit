@@ -1,32 +1,48 @@
 package com.maxfit.controller;
 
+import com.maxfit.view.ViewRoutes;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class SchedulesController extends HttpServlet {
+/**
+ * Controlador de la sección de Horarios.
+ */
+public class SchedulesController extends AbstractController {
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        String vista = request.getParameter("vista");
+        HttpSession session = req.getSession(false);
+        if (session == null || session.getAttribute("userName") == null) {
+            resp.sendRedirect(req.getContextPath() + "/login");
+            return;
+        }
 
-        if ("calendario".equals(vista)) {
-            request.getRequestDispatcher("/WEB-INF/views/schedules/calendar.jsp")
-                    .forward(request, response);
+        String role = (String) session.getAttribute("userRole");
+        if (!"Admin".equalsIgnoreCase(role) && !"Recepcionista".equalsIgnoreCase(role)) {
+            resp.sendError(HttpServletResponse.SC_FORBIDDEN, "No tienes permiso para acceder a esta sección.");
+            return;
+        }
+
+        req.setAttribute("activePage", "schedules");
+
+        String path = req.getServletPath();
+        String vista = req.getParameter("vista");
+
+        if ("/calendar".equals(path) || "calendario".equals(vista)) {
+            renderView(req, resp, ViewRoutes.SCHEDULES_CALENDAR);
         } else {
-            // Por defecto muestra el listado
-            request.getRequestDispatcher("/WEB-INF/views/schedules/schedules.jsp")
-                    .forward(request, response);
+            renderView(req, resp, ViewRoutes.SCHEDULES_INDEX);
         }
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        doGet(request, response);
+        doGet(req, resp);
     }
 }

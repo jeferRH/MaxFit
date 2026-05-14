@@ -29,7 +29,7 @@
                     <!-- Week / Month Toggle -->
                     <div class="view-toggle">
                         <button class="tab active">Week</button>
-                        <button class="tab" onclick="window.location.href = '${pageContext.request.contextPath}/schedules?vista=lista'">
+                        <button class="tab" onclick="window.location.href = '${pageContext.request.contextPath}/schedules'">
                             Month
                         </button>
                     </div>
