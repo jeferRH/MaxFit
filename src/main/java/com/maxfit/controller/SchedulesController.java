@@ -1,21 +1,32 @@
 package com.maxfit.controller;
 
-import com.maxfit.view.ViewRoutes;
 import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class SchedulesController extends AbstractController {
+public class SchedulesController extends HttpServlet {
+
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession(false);
-        if (session == null || session.getAttribute("userName") == null) {
-            resp.sendRedirect(req.getContextPath() + "/login");
-            return;
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        String vista = request.getParameter("vista");
+
+        if ("calendario".equals(vista)) {
+            request.getRequestDispatcher("/WEB-INF/views/schedules/calendar.jsp")
+                    .forward(request, response);
+        } else {
+            // Por defecto muestra el listado
+            request.getRequestDispatcher("/WEB-INF/views/schedules/schedules.jsp")
+                    .forward(request, response);
         }
-        req.setAttribute("activePage", "schedules");
-        renderView(req, resp, ViewRoutes.SCHEDULES_INDEX);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        doGet(request, response);
     }
 }
