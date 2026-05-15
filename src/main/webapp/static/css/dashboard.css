@@ -8,6 +8,7 @@
   --background: #1e100e;
   --on-background: #f9dcd9;
   --surface-container: #2c1c1a;
+  --surface-container-high: #372624;
   --surface-container-highest: #42302f;
   --on-surface: #f9dcd9;
   --on-surface-variant: #e4beba;
@@ -17,6 +18,10 @@
   --on-primary: #68000a;
   --outline-variant: #5b403e;
   --outline: #ab8986;
+  --tertiary: #69d8d4;
+  --tertiary-bg: rgba(105, 216, 212, 0.1);
+  --error: #ffb4ab;
+  --error-bg: rgba(255, 180, 171, 0.1);
 
   --font-family: 'Inter', sans-serif;
 }
@@ -133,18 +138,6 @@ body {
   color: var(--on-surface-variant) !important;
 }
 
-.stat-card {
-  background: var(--surface-container);
-  border: 1px solid var(--outline-variant);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  transition: transform 0.2s ease;
-}
-
-.stat-card h3 {
-  color: var(--on-surface);
-}
-
 .card-workspace {
   background-color: var(--surface-container) !important;
   border: 1px solid var(--outline-variant) !important;
@@ -153,7 +146,7 @@ body {
 }
 
 .card-header {
-  background: transparent !important;
+  background: rgba(55, 38, 36, 0.5) !important;
   border-bottom: 1px solid var(--outline-variant) !important;
   padding: 1.25rem;
 }
@@ -180,7 +173,7 @@ body {
 .table tbody td {
   background-color: transparent !important;
   border-bottom: 1px solid var(--outline-variant) !important;
-  padding: 1.25rem;
+  padding: 1rem 1.25rem;
   vertical-align: middle;
   color: var(--on-surface) !important;
 }
@@ -279,6 +272,191 @@ body {
   background-color: transparent !important;
   opacity: 0.5;
 }
+
+.label-caps {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.stat-card {
+  background: var(--surface-container);
+  border: 1px solid var(--outline-variant);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  transition: border-color 0.2s ease;
+  border-top-width: 2px;
+}
+
+.stat-card:hover {
+  border-color: var(--outline);
+}
+
+.stat-card--primary  { border-top-color: var(--primary-container);    box-shadow: 0 0 15px rgba(255,84,81,0.05); }
+.stat-card--secondary { border-top-color: var(--secondary-container); box-shadow: 0 0 15px rgba(236,106,6,0.05); }
+.stat-card--tertiary  { border-top-color: var(--tertiary);            box-shadow: 0 0 15px rgba(105,216,212,0.05); }
+.stat-card--error     { border-top-color: var(--error);               box-shadow: 0 0 15px rgba(255,180,171,0.05); }
+
+.stat-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.1);
+}
+
+.stat-icon--primary   { background: rgba(255,84,81,0.12);   color: var(--primary-container); }
+.stat-icon--secondary { background: rgba(236,106,6,0.12);   color: var(--secondary-container); }
+.stat-icon--tertiary  { background: var(--tertiary-bg);     color: var(--tertiary); }
+.stat-icon--error     { background: var(--error-bg);        color: var(--error); }
+
+.trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.trend--up      { color: var(--tertiary); }
+.trend--down    { color: var(--error); }
+.trend--neutral { color: var(--outline); }
+
+.chart-area {
+  background-color: var(--surface-container-high);
+  border-radius: 0 0 1rem 1rem;
+  border: 1px solid rgba(91,64,62,0.4);
+  position: relative;
+}
+
+.chart-gradient-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, rgba(255,84,81,0.15), transparent);
+  pointer-events: none;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.chart-bar {
+  flex: 1;
+  background: rgba(255,84,81,0.45);
+  border-radius: 4px 4px 0 0;
+  transition: background 0.2s ease;
+  position: relative;
+  cursor: pointer;
+  min-width: 30px;
+}
+
+.chart-bar:hover {
+  background: rgba(255,84,81,0.75);
+}
+
+.chart-bar--active {
+  background: var(--primary-container) !important;
+  box-shadow: 0 0 16px rgba(255,84,81,0.35);
+}
+
+.chart-tooltip {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-container-highest);
+  color: var(--on-surface);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--outline-variant);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.weekly-bar {
+  flex: 1;
+  background: rgba(236,106,6,0.35);
+  border-radius: 4px 4px 0 0;
+  transition: background 0.2s ease;
+  min-width: 20px;
+}
+
+.weekly-bar:hover {
+  background: rgba(236,106,6,0.65);
+}
+
+.weekly-bar--active {
+  background: var(--secondary-container) !important;
+  box-shadow: 0 0 10px rgba(236,106,6,0.25);
+}
+
+.badge-status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-status--success {
+  background: rgba(105,216,212,0.12);
+  color: #69d8d4;
+  border: 1px solid rgba(105,216,212,0.3);
+}
+
+.badge-status--danger {
+  background: rgba(255,180,171,0.12);
+  color: #ffb4ab;
+  border: 1px solid rgba(255,180,171,0.3);
+}
+
+.badge-status--warning {
+  background: rgba(245,158,11,0.12);
+  color: #f59e0b;
+  border: 1px solid rgba(245,158,11,0.3);
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.65rem 0.5rem;
+  border-radius: 0.5rem;
+  border-bottom: 1px solid var(--outline-variant);
+  transition: background 0.15s ease;
+}
+
+.activity-item:hover {
+  background: var(--surface-container-high);
+}
+
+.activity-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.activity-icon--primary   { background: rgba(255,84,81,0.12);   color: var(--primary-container); }
+.activity-icon--secondary { background: rgba(236,106,6,0.12);   color: var(--secondary-container); }
+.activity-icon--tertiary  { background: var(--tertiary-bg);     color: var(--tertiary); }
+.activity-icon--error     { background: var(--error-bg);        color: var(--error); }
 
 @media (max-width: 991.98px) {
   .sidebar {
