@@ -25,12 +25,14 @@
                     <p class="text-secondary mb-0">Manage scheduling, instructors, and facility utilization.</p>
                 </div>
                 <div class="d-flex align-items-center gap-3">
-                    <!-- Week / Month Toggle -->
-                    <!-- Week / Month Toggle -->
-                    <div class="view-toggle">
-                        <button class="tab active">Week</button>
+                    <div class="view-toggle mb-4">
                         <button class="tab" onclick="window.location.href = '${pageContext.request.contextPath}/schedules'">
-                            Month
+                            <span class="material-symbols-outlined icon-sm">list</span>
+                            Listado
+                        </button>
+                        <button class="tab active">
+                            <span class="material-symbols-outlined icon-sm" style="font-variation-settings:'FILL' 1;">calendar_month</span>
+                            Calendario Semanal
                         </button>
                     </div>
                     <!-- Date Navigation -->
@@ -236,7 +238,7 @@
                 const now = new Date();
                 const h = now.getHours();
                 const m = now.getMinutes();
-                const label = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`;
+                const label = `\${String(h).padStart(2,'0')}:\${String(m).padStart(2,'0')}`;
                         const startH = 6; // grid starts at 6 AM
                         const rowPx = 100;
                         const topPx = ((h - startH) + m / 60) * rowPx;

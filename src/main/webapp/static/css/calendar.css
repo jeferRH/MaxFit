@@ -16,16 +16,17 @@
 .cal-header h1 { font-size: 32px; }
 
 /* ════════════════════════════════
-   Week / Month Toggle
+   Toggle Listado / Calendario (mismo aspecto que schedules.css)
    ════════════════════════════════ */
 .view-toggle {
     display: inline-flex;
-    gap: 2px;
-    padding: 3px;
-    border-radius: 8px;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 10px;
     border: 1px solid var(--border-color, rgba(255,255,255,.1));
-    background: var(--surface, rgba(255,255,255,.03));
+    background: var(--surface, rgba(255,255,255,.04));
 }
+
 .view-toggle .tab {
     background: none;
     border: none;
@@ -34,20 +35,29 @@
     font-weight: 700;
     letter-spacing: .06em;
     text-transform: uppercase;
-    padding: 6px 14px;
-    border-radius: 6px;
+    padding: 7px 16px;
+    border-radius: 7px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     color: var(--text-muted, #888);
     transition: background .2s, color .2s;
 }
+
 .view-toggle .tab.active {
-    background: var(--surface-bright, rgba(255,255,255,.1));
+    background: var(--surface-bright, rgba(255,255,255,.08));
+    border: 1px solid var(--border-color, rgba(255,255,255,.12));
     color: var(--text, #f9dcd9);
-    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    box-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
+
 .view-toggle .tab:hover:not(.active) {
+    background: var(--surface-high, rgba(255,255,255,.06));
     color: var(--text, #f9dcd9);
 }
+
+.view-toggle .icon-sm { font-size: 16px !important; }
 
 /* ════════════════════════════════
    Date Navigation

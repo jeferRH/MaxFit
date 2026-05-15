@@ -211,9 +211,9 @@
                                 <td>
                                     <div class="d-flex align-items-center gap-2">
                                         <div class="cap-bar-wrap">
-                                            <div class="cap-bar cap-bar--teal" style="width:${c.porcentaje}%;"></div>
+                                            <div class="cap-bar cap-bar--teal js-cap-bar-pct" data-pct='<c:out value="${c.porcentaje}"/>'></div>
                                         </div>
-                                        <span class="cap-label">${c.inscritos}/${c.capacidad}</span>
+                                        <span class="cap-label"><c:out value="${c.inscritos}"/>/<c:out value="${c.capacidad}"/></span>
                                     </div>
                                 </td>
                                 <td>
@@ -244,6 +244,12 @@
                     document.querySelectorAll('.view-toggle .tab').forEach(b => b.classList.remove('active'));
                     this.classList.add('active');
                 });
+            });
+            document.querySelectorAll('.js-cap-bar-pct[data-pct]').forEach(function (el) {
+                var p = el.getAttribute('data-pct');
+                if (p !== null && p !== '') {
+                    el.style.width = p + '%';
+                }
             });
         </script>
     </body>

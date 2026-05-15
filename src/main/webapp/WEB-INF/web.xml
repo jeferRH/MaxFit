@@ -32,6 +32,15 @@
   </servlet-mapping>
 
   <servlet>
+    <servlet-name>LogoutController</servlet-name>
+    <servlet-class>com.maxfit.controller.LogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutController</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
     <servlet-name>ForgotPasswordController</servlet-name>
     <servlet-class>com.maxfit.controller.ForgotPasswordController</servlet-class>
   </servlet>
