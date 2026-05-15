@@ -24,6 +24,11 @@
     <main class="main-content">
         <div class="container-fluid px-0">
 
+            <%-- ============================================================
+                 BLOQUE ADMIN
+                 ============================================================ --%>
+            <% if ("Admin".equalsIgnoreCase((String) session.getAttribute("userRole"))) { %>
+
             <div class="d-flex justify-content-between align-items-end mb-4">
                 <div>
                     <h1 class="h2 fw-bold mb-1" style="color: var(--on-surface); letter-spacing: -0.02em;">Overview</h1>
@@ -32,8 +37,8 @@
                 <span class="label-caps" style="color: var(--on-surface-variant);">Hoy: <span id="fecha-hoy"></span></span>
             </div>
 
+            <!-- Stat Cards Admin -->
             <div class="row g-3 mb-4">
-
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="stat-card stat-card--primary h-100">
                         <div class="d-flex justify-content-between align-items-start mb-2">
@@ -50,7 +55,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="stat-card stat-card--secondary h-100">
                         <div class="d-flex justify-content-between align-items-start mb-2">
@@ -67,7 +71,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="stat-card stat-card--tertiary h-100">
                         <div class="d-flex justify-content-between align-items-start mb-2">
@@ -84,7 +87,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="stat-card stat-card--error h-100">
                         <div class="d-flex justify-content-between align-items-start mb-2">
@@ -101,11 +103,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
+            <!-- Charts Admin -->
             <div class="row g-3 mb-4">
-
                 <div class="col-12 col-lg-8">
                     <div class="card-workspace p-0 h-100" style="height: 380px !important;">
                         <div class="card-header d-flex justify-content-between align-items-center">
@@ -124,7 +125,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-lg-4">
                     <div class="card-workspace p-0 h-100" style="height: 380px !important;">
                         <div class="card-header d-flex justify-content-between align-items-center">
@@ -151,11 +151,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
+            <!-- Bottom Widgets Admin -->
             <div class="row g-3">
-
                 <div class="col-12 col-lg-6">
                     <div class="card-workspace p-0 h-100">
                         <div class="card-header d-flex justify-content-between align-items-center">
@@ -211,7 +210,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-lg-6">
                     <div class="card-workspace p-0 h-100">
                         <div class="card-header d-flex align-items-center gap-2">
@@ -219,7 +217,6 @@
                             <h5 class="fw-semibold mb-0" style="color: var(--on-surface);">Actividad Reciente</h5>
                         </div>
                         <div class="p-2">
-
                             <div class="activity-item">
                                 <div class="activity-icon activity-icon--primary">
                                     <span class="material-symbols-outlined">person_add</span>
@@ -230,7 +227,6 @@
                                 </div>
                                 <span class="label-caps ms-2 text-nowrap" style="color: var(--outline);">10 min</span>
                             </div>
-
                             <div class="activity-item">
                                 <div class="activity-icon activity-icon--tertiary">
                                     <span class="material-symbols-outlined">check_circle</span>
@@ -241,7 +237,6 @@
                                 </div>
                                 <span class="label-caps ms-2 text-nowrap" style="color: var(--outline);">45 min</span>
                             </div>
-
                             <div class="activity-item">
                                 <div class="activity-icon activity-icon--secondary">
                                     <span class="material-symbols-outlined">payment</span>
@@ -252,7 +247,6 @@
                                 </div>
                                 <span class="label-caps ms-2 text-nowrap" style="color: var(--outline);">2 hrs</span>
                             </div>
-
                             <div class="activity-item border-0">
                                 <div class="activity-icon activity-icon--error">
                                     <span class="material-symbols-outlined">cancel</span>
@@ -263,12 +257,259 @@
                                 </div>
                                 <span class="label-caps ms-2 text-nowrap" style="color: var(--outline);">4 hrs</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <% } %>
+
+            <%-- ============================================================
+                 BLOQUE RECEPCIONISTA
+                 ============================================================ --%>
+            <% if ("Recepcionista".equalsIgnoreCase((String) session.getAttribute("userRole"))) { %>
+
+            <!-- Header Recepción -->
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h1 class="h2 fw-bold mb-1" style="color: var(--on-surface); letter-spacing: -0.02em;">Recepción Hoy</h1>
+                    <p class="mb-0" style="color: var(--on-surface-variant); font-size: 1rem;">Resumen de operaciones y métricas diarias.</p>
+                </div>
+                <span class="label-caps" style="color: var(--on-surface-variant);">Hoy: <span id="fecha-hoy"></span></span>
+            </div>
+
+            <!-- Stat Cards Recepcionista -->
+            <div class="row g-3 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="stat-card stat-card--primary h-100">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="label-caps" style="color: var(--on-surface-variant);">Clientes Atendidos</span>
+                            <div class="stat-icon stat-icon--primary">
+                                <span class="material-symbols-outlined" style="font-size:20px;">group</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-2">
+                            <h3 class="h4 fw-bold mb-0" style="color: var(--on-surface);">142</h3>
+                            <span class="trend trend--up">
+                                <span class="material-symbols-outlined" style="font-size:14px;">trending_up</span> +12% vs ayer
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="stat-card stat-card--secondary h-100">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="label-caps" style="color: var(--on-surface-variant);">Contratos Nuevos</span>
+                            <div class="stat-icon stat-icon--secondary">
+                                <span class="material-symbols-outlined" style="font-size:20px;">contract</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-2">
+                            <h3 class="h4 fw-bold mb-0" style="color: var(--on-surface);">8</h3>
+                            <span class="label-caps ms-1" style="color: var(--on-surface-variant);">Mes actual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="stat-card stat-card--tertiary h-100">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="label-caps" style="color: var(--on-surface-variant);">Asistencias</span>
+                            <div class="stat-icon stat-icon--tertiary">
+                                <span class="material-symbols-outlined" style="font-size:20px;">how_to_reg</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-2">
+                            <h3 class="h4 fw-bold mb-0" style="color: var(--on-surface);">315</h3>
+                            <span class="trend trend--up">
+                                <span class="material-symbols-outlined" style="font-size:14px;">trending_up</span> Pico 18:00
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="stat-card stat-card--error h-100">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="label-caps" style="color: var(--on-surface-variant);">Pagos Recibidos</span>
+                            <div class="stat-icon stat-icon--success">
+                                <span class="material-symbols-outlined" style="font-size:20px;">payments</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-2">
+                            <h3 class="h4 fw-bold mb-0" style="color: var(--on-surface);">$4,250</h3>
+                            <span class="label-caps ms-1" style="color: var(--on-surface-variant);">12 transacciones</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Widgets Row Recepcionista: 3 columnas -->
+            <div class="row g-3">
+
+                <!-- Próximos Vencimientos -->
+                <div class="col-12 col-lg-4">
+                    <div class="card-workspace p-0 recep-widget-card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="fw-semibold mb-0 d-flex align-items-center gap-2" style="color: var(--on-surface);">
+                                <span class="material-symbols-outlined" style="color: var(--error);">warning</span>
+                                Vencimientos
+                            </h5>
+                            <a href="#" class="label-caps" style="color: var(--primary-container); text-decoration: none;">Ver todos</a>
+                        </div>
+                        <div class="recep-scroll-body">
+                            <ul class="list-unstyled mb-0 p-2">
+                                <li class="recep-venc-item recep-venc--danger">
+                                    <div>
+                                        <p class="fw-semibold mb-0" style="color: var(--on-surface); font-size: 0.9rem;">Carlos Mendoza</p>
+                                        <p class="mb-0" style="color: var(--on-surface-variant); font-size: 0.8rem;">Plan Anual Elite</p>
+                                    </div>
+                                    <span class="badge-status badge-status--danger">Vence Hoy</span>
+                                </li>
+                                <li class="recep-venc-item recep-venc--warning">
+                                    <div>
+                                        <p class="fw-semibold mb-0" style="color: var(--on-surface); font-size: 0.9rem;">Ana Silva</p>
+                                        <p class="mb-0" style="color: var(--on-surface-variant); font-size: 0.8rem;">Pase Mensual</p>
+                                    </div>
+                                    <span class="badge-status badge-status--warning">Mañana</span>
+                                </li>
+                                <li class="recep-venc-item recep-venc--warning">
+                                    <div>
+                                        <p class="fw-semibold mb-0" style="color: var(--on-surface); font-size: 0.9rem;">Javier Roca</p>
+                                        <p class="mb-0" style="color: var(--on-surface-variant); font-size: 0.8rem;">CrossFit Pack</p>
+                                    </div>
+                                    <span class="badge-status badge-status--warning">Mañana</span>
+                                </li>
+                                <li class="recep-venc-item recep-venc--neutral">
+                                    <div>
+                                        <p class="fw-semibold mb-0" style="color: var(--on-surface); font-size: 0.9rem;">Lucia Torres</p>
+                                        <p class="mb-0" style="color: var(--on-surface-variant); font-size: 0.8rem;">Plan Anual Elite</p>
+                                    </div>
+                                    <span class="badge-status badge-status--neutral">En 3 días</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nuevos Registros -->
+                <div class="col-12 col-lg-4">
+                    <div class="card-workspace p-0 recep-widget-card">
+                        <div class="card-header d-flex align-items-center gap-2">
+                            <span class="material-symbols-outlined" style="color: var(--secondary-container);">person_add</span>
+                            <h5 class="fw-semibold mb-0" style="color: var(--on-surface);">Nuevos Registros</h5>
+                        </div>
+                        <div class="recep-scroll-body p-0">
+                            <table class="table table-hover mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="recep-avatar">
+                                                    <span class="material-symbols-outlined" style="font-size:16px; color: var(--on-surface-variant);">person</span>
+                                                </div>
+                                                <span style="font-size:0.9rem;">Roberto Gómez</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-end label-caps" style="color: var(--on-surface-variant);">09:15 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="recep-avatar">
+                                                    <span class="material-symbols-outlined" style="font-size:16px; color: var(--on-surface-variant);">person</span>
+                                                </div>
+                                                <span style="font-size:0.9rem;">María López</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-end label-caps" style="color: var(--on-surface-variant);">08:40 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="recep-avatar">
+                                                    <span class="material-symbols-outlined" style="font-size:16px; color: var(--on-surface-variant);">person</span>
+                                                </div>
+                                                <span style="font-size:0.9rem;">David Peña</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-end label-caps" style="color: var(--on-surface-variant);">Ayer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="recep-avatar">
+                                                    <span class="material-symbols-outlined" style="font-size:16px; color: var(--on-surface-variant);">person</span>
+                                                </div>
+                                                <span style="font-size:0.9rem;">Elena Ríos</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-end label-caps" style="color: var(--on-surface-variant);">Ayer</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Check-ins Recientes -->
+                <div class="col-12 col-lg-4">
+                    <div class="card-workspace p-0 recep-widget-card">
+                        <div class="card-header d-flex align-items-center gap-2">
+                            <span class="material-symbols-outlined" style="color: var(--tertiary);">history</span>
+                            <h5 class="fw-semibold mb-0" style="color: var(--on-surface);">Check-ins Recientes</h5>
+                        </div>
+                        <div class="recep-scroll-body p-3">
+
+                            <div class="recep-checkin-item">
+                                <div class="recep-checkin-line"></div>
+                                <div class="recep-checkin-dot recep-checkin-dot--success">
+                                    <span class="material-symbols-outlined" style="font-size:16px; color: #10B981;">check_circle</span>
+                                </div>
+                                <div>
+                                    <p class="mb-0" style="font-size:0.9rem; color: var(--on-surface);"><strong>Martín Suárez</strong> ingresó</p>
+                                    <p class="mb-0 label-caps" style="color: var(--on-surface-variant);">Hace 2 min</p>
+                                </div>
+                            </div>
+
+                            <div class="recep-checkin-item">
+                                <div class="recep-checkin-line"></div>
+                                <div class="recep-checkin-dot recep-checkin-dot--success">
+                                    <span class="material-symbols-outlined" style="font-size:16px; color: #10B981;">check_circle</span>
+                                </div>
+                                <div>
+                                    <p class="mb-0" style="font-size:0.9rem; color: var(--on-surface);"><strong>Sofia Castro</strong> ingresó</p>
+                                    <p class="mb-0 label-caps" style="color: var(--on-surface-variant);">Hace 15 min</p>
+                                </div>
+                            </div>
+
+                            <div class="recep-checkin-item">
+                                <div class="recep-checkin-line"></div>
+                                <div class="recep-checkin-dot recep-checkin-dot--error">
+                                    <span class="material-symbols-outlined" style="font-size:16px; color: var(--error);">block</span>
+                                </div>
+                                <div>
+                                    <p class="mb-0" style="font-size:0.9rem; color: var(--on-surface);"><strong>Juan Pérez</strong> acceso denegado <span style="color:var(--error);">(Deuda)</span></p>
+                                    <p class="mb-0 label-caps" style="color: var(--on-surface-variant);">Hace 45 min</p>
+                                </div>
+                            </div>
+
+                            <div class="recep-checkin-item recep-checkin-item--last">
+                                <div class="recep-checkin-dot recep-checkin-dot--success">
+                                    <span class="material-symbols-outlined" style="font-size:16px; color: #10B981;">check_circle</span>
+                                </div>
+                                <div>
+                                    <p class="mb-0" style="font-size:0.9rem; color: var(--on-surface);"><strong>Luis Navarro</strong> ingresó</p>
+                                    <p class="mb-0 label-caps" style="color: var(--on-surface-variant);">Hace 1 hora</p>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
                 </div>
 
-            </div>
+            </div><!-- end widgets row recepcionista -->
+
+            <% } %>
+
         </div>
     </main>
 
@@ -277,10 +518,14 @@
         crossorigin="anonymous"></script>
     <script>
         const d = new Date();
-        document.getElementById('fecha-hoy').textContent = d.toLocaleDateString('es-PE', {
-            day: '2-digit', month: 'short', year: 'numeric'
-        });
+        const fechaEl = document.getElementById('fecha-hoy');
+        if (fechaEl) {
+            fechaEl.textContent = d.toLocaleDateString('es-PE', {
+                day: '2-digit', month: 'short', year: 'numeric'
+            });
+        }
 
+        // Tooltips de barras (solo aplica al dashboard admin)
         document.querySelectorAll('.chart-bar').forEach(bar => {
             bar.addEventListener('mouseenter', function () {
                 const tip = document.createElement('div');

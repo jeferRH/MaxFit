@@ -1,0 +1,128 @@
+2026.05.15 08:52:24 INFO  Started: Metals version 1.6.7 in folders 'C:\Users\Jherson Silva\MaxFit' for client Visual Studio Code 1.120.0.
+2026.05.15 08:52:24 INFO  Memory monitor started
+2026.05.15 08:52:26 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.05.15 08:55:07 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:10 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:11 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+may 15, 2026 9:14:11 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2026.05.15 09:14:11 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:11 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+may 15, 2026 9:14:11 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6
+2026.05.15 09:14:13 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:13 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:14 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:32 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:32 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:33 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:34 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:34 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:34 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:34 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:35 WARN  no build target for: C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java
+2026.05.15 09:14:35 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:35 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/MaxFit/src/main/java/com/maxfit/controller/DashboardController.java. Output:
+
+2026.05.15 09:14:36 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:37 WARN  no build target for: C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java
+2026.05.15 09:14:37 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:39 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:39 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:39 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:39 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:39 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:41 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+may 15, 2026 9:14:41 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43
+2026.05.15 09:14:41 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:42 WARN  no build target for: C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java
+2026.05.15 09:14:42 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:14:41 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/MaxFit/src/main/java/com/maxfit/controller/DashboardController.java. Output:
+
+2026.05.15 09:19:57 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:19:57 WARN  no build target for: C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java
+2026.05.15 09:19:58 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:20:04 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\LogoutController.java. Using fallback presentation compiler.
+2026.05.15 09:20:04 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\LogoutController.java. Using fallback presentation compiler.
+may 15, 2026 9:20:05 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 63
+2026.05.15 09:20:05 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\LogoutController.java. Using fallback presentation compiler.
+2026.05.15 09:20:08 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\LoginController.java. Using fallback presentation compiler.
+2026.05.15 09:20:08 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\LoginController.java. Using fallback presentation compiler.
+may 15, 2026 9:20:08 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 72
+2026.05.15 09:20:08 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\LoginController.java. Using fallback presentation compiler.
+2026.05.15 09:20:08 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\LoginController.java. Using fallback presentation compiler.
+2026.05.15 09:20:18 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:18 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:18 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+may 15, 2026 9:20:18 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 85
+2026.05.15 09:20:34 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:36 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:36 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:37 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:37 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:37 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:37 WARN  Running javac-semanticdb failed for file:///C:/Users/Jherson%20Silva/MaxFit/src/main/java/com/maxfit/service/StaticAuthentication.java. Output:
+
+2026.05.15 09:20:38 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:38 INFO  Created report: Optional[file:///C:/Users/Jherson%20Silva/MaxFit/src/main/java/com/maxfit/service/StaticAuthentication.java]
+2026.05.15 09:20:38 INFO  empty definition using pc, found symbol in pc: java/lang/String#equals(). (full report at: "C:\Users\Jherson Silva\MaxFit\.metals\.reports\metals-full\2026-05-15\r_empty-definition_09-20-38-344.md")
+2026.05.15 09:20:38 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:38 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:38 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:20:38 INFO  empty definition using pc, found symbol in pc: java/lang/String#equals(). (full report at: "C:\Users\Jherson Silva\MaxFit\.metals\.reports\metals-full\2026-05-15\r_empty-definition_09-20-38-344.md")
+2026.05.15 09:20:53 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+may 15, 2026 9:20:53 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 163
+2026.05.15 09:20:53 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:20:54 WARN  no build target for: C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java
+2026.05.15 09:20:54 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:20:54 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:20:54 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:20:54 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:20:54 INFO  Created report: Optional[file:///C:/Users/Jherson%20Silva/MaxFit/src/main/java/com/maxfit/controller/DashboardController.java]
+2026.05.15 09:20:54 INFO  empty definition using pc, found symbol in pc: _empty_/ServletException# (full report at: "C:\Users\Jherson Silva\MaxFit\.metals\.reports\metals-full\2026-05-15\r_empty-definition_09-20-55-139.md")
+2026.05.15 09:20:54 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:20:54 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:20:55 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:20:55 INFO  empty definition using pc, found symbol in pc: _empty_/ServletException# (full report at: "C:\Users\Jherson Silva\MaxFit\.metals\.reports\metals-full\2026-05-15\r_empty-definition_09-20-55-139.md")
+2026.05.15 09:23:05 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\LogoutController.java. Using fallback presentation compiler.
+2026.05.15 09:23:08 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\LoginController.java. Using fallback presentation compiler.
+2026.05.15 09:24:14 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:24:15 WARN  no build target for: C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java
+may 15, 2026 9:24:15 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 177
+2026.05.15 09:24:14 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+may 15, 2026 9:24:15 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 179
+2026.05.15 09:24:14 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:24:15 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:24:14 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:24:15 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:24:15 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:24:15 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:24:15 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:24:16 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:24:29 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.
+2026.05.15 09:25:16 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:25:17 WARN  no build target for: C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java
+2026.05.15 09:25:16 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+may 15, 2026 9:25:17 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 195
+2026.05.15 09:25:16 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:25:17 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:25:16 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:25:17 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:25:19 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:25:19 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:29:49 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:29:49 WARN  no build target for: C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java
+2026.05.15 09:29:49 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+may 15, 2026 9:29:49 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 208
+2026.05.15 09:29:49 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:29:49 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\controller\DashboardController.java. Using fallback presentation compiler.
+2026.05.15 09:29:51 INFO  no build target found for C:\Users\Jherson Silva\MaxFit\src\main\java\com\maxfit\service\StaticAuthentication.java. Using fallback presentation compiler.

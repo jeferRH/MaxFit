@@ -1,3 +1,14 @@
+error id: file:///C:/Users/Jherson%20Silva/MaxFit/src/main/java/com/maxfit/controller/DashboardController.java:_empty_/ServletException#
+file:///C:/Users/Jherson%20Silva/MaxFit/src/main/java/com/maxfit/controller/DashboardController.java
+empty definition using pc, found symbol in pc: _empty_/ServletException#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 456
+uri: file:///C:/Users/Jherson%20Silva/MaxFit/src/main/java/com/maxfit/controller/DashboardController.java
+text:
+```scala
 package com.maxfit.controller;
 
 import com.maxfit.view.ViewRoutes;
@@ -11,7 +22,7 @@ public class DashboardController extends AbstractController {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
+            throws Servl@@etException, IOException {
         
         HttpSession session = req.getSession(false);
         if (session == null || session.getAttribute("userName") == null) {
@@ -30,3 +41,10 @@ public class DashboardController extends AbstractController {
         renderView(req, resp, ViewRoutes.AUTH_DASHBOARD);
     }
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/ServletException#
